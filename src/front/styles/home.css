@@ -5,3 +5,95 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+
+.listWrapper {
+    width: 700px;
+    margin: auto;
+    margin-top: 45px;
+    background-color: rgb(255, 241, 245);
+    box-shadow: 9px 9px 20px rgb(184, 150, 158);
+    color: rgb(108, 108, 108);
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.item {
+    border: 1px solid rgb(255, 225, 233);
+    list-style: none;
+    padding: 12px;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.tasks-left {
+    border: 1px solid rgb(255, 225, 233);
+    list-style: none;
+    padding: 7px;
+    color: rgb(161, 161, 161);;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 189, 206);
+    font-size: 80px;
+}
+
+input {
+    border: none;
+    width: 100%;
+    background-color: rgb(255, 241, 245);
+    color: rgb(108, 108, 108);
+}
+
+input:focus {
+    outline: none;
+}
+
+i {
+    color: rgb(255, 131, 127);
+}
+
+i:hover {
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+
+.trash {
+    display: none;
+}
+
+.item:hover .trash {
+    display: block;
+}
+
+button {
+    margin-top: 45px;
+    margin-bottom: 150px;
+    float: right;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 189, 206);
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(108, 108, 108);
+    box-shadow: 0 6px rgb(213, 172, 183);
+}
+
+button:hover {
+    background-color: rgb(255, 169, 191);
+    box-shadow: 0 6px rgb(185, 138, 150);
+
+}
+
+button:active {
+    background-color: rgb(255, 150, 176);
+    box-shadow: 0 3px rgb(177, 130, 143);
+    transform: translateY(4px);
+}
