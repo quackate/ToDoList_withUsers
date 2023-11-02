@@ -3,7 +3,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
 
+import { List } from "./pages/list";
 import { Home } from "./pages/home";
+import { Login } from "./pages/login";
+import { SignUp } from "./pages/signup";
+import { ResetPassword } from "./pages/resetpass";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -15,15 +19,19 @@ const Layout = () => {
     // you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
     const basename = process.env.BASENAME || "";
 
-    if(!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL/ >;
+    if (!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL />;
 
     return (
         <div>
             <BrowserRouter basename={basename}>
                 <ScrollToTop>
-                    {/*<Navbar />*/}
+                    <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
+                        <Route element={<List />} path="/list" />
+                        <Route element={<Login />} path="/login" />
+                        <Route element={<SignUp />} path="/signup" />
+                        <Route element={<ResetPassword />} path="/reset_password" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     {/*<Footer />*/}

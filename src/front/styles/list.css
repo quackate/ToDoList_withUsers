@@ -1,0 +1,113 @@
+/*
+    home.css: This website contains selectors only used in home.css
+
+    All pages share the styles on index.css but you should create 
+    one more css for each page that will contain the selected used 
+    on that page only (the ones not reused in other pages).
+*/
+.main-list-wrapper {
+    margin-top: 75px;
+}
+
+.listWrapper {
+    width: 700px;
+    margin: auto;
+    margin-top: 45px;
+    background-color: rgb(255, 241, 245);
+    box-shadow: 9px 9px 20px rgb(184, 150, 158);
+    color: rgb(80, 80, 80);
+    border-radius: 10px;
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.list_input {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.item {
+    border: 1px solid rgb(255, 225, 233);
+    list-style: none;
+    padding: 12px;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+::placeholder {
+    color: rgb(80, 80, 80);
+}
+
+.tasks-left {
+    border: 1px solid rgb(255, 225, 233);
+    list-style: none;
+    padding: 7px;
+    color: rgb(105, 105, 105);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.todo_title {
+    text-align: center;
+    color: rgb(255, 189, 206);
+    font-size: 80px;
+}
+
+.todo_input {
+    border: none;
+    width: 100%;
+    background-color: rgb(255, 241, 245);
+}
+
+.todo_input:focus {
+    outline: none;
+}
+
+.delete_icon {
+    color: rgb(255, 131, 127);
+}
+
+.delete_icon:hover {
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+
+.trash {
+    display: none;
+}
+
+.item:hover .trash {
+    display: block;
+}
+
+.clearlist_btn {
+    margin-top: 45px;
+    margin-bottom: 150px;
+    float: right;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 189, 206);
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(108, 108, 108);
+    box-shadow: 0 5px rgb(213, 172, 183);
+}
+
+.clearlist_btn:hover {
+    background-color: rgb(255, 169, 191);
+    box-shadow: 0 5px rgb(185, 138, 150);
+
+}
+
+.clearlist_btn:active {
+    background-color: rgb(255, 150, 176);
+    box-shadow: 0 2px rgb(177, 130, 143);
+    transform: translateY(4px);
+}

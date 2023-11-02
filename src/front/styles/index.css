@@ -2,7 +2,6 @@
     General Styles used on every website (Don't Repeat Yourself)
 */
 body {
-    margin-top: 100px;
-    background-color: rgb(255, 231, 237);
     font-family: "Quicksand";
+    background-color: rgb(255, 231, 237);
 }
